@@ -6,6 +6,7 @@ import clientsRoutes from '../modules/clients/clients.routes.js'
 import lotsRoutes from '../modules/cultivation/lots.routes.js'
 import recordsRoutes from '../modules/cultivation/records.routes.js'
 import consumptionsRoutes from '../modules/cultivation/consumptions.routes.js'
+import financeRoutes from '../modules/finance/finance.routes.js' 
 
 const router = Router()
 
@@ -16,5 +17,6 @@ router.use('/clients', clientsRoutes)
 router.use('/cultivation/lots', lotsRoutes)
 router.use('/cultivation/records', recordsRoutes)
 router.use('/cultivation/consumptions', consumptionsRoutes)
+router.use('/finance', financeRoutes)
 
 export default router
